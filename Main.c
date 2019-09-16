@@ -13,7 +13,7 @@ int main()
 	
 	//get current floor from user
 	printf("What floor are you on? ");
-	if (scanf("%d", &currentFloor) > 0) //ensure input is valid
+	if (scanf_s("%d", &currentFloor) > 0) //ensure input is valid
 	{
 		if (currentFloor <= topFloor && currentFloor >= bottomFloor) //check that current floor is within boundaries
 		{
@@ -33,7 +33,7 @@ int main()
 
     //get target floor from user
 	printf("What floor would you like to go to? ");
-	if (scanf("%d", &targetFloor) > 0)
+	if (scanf_s("%d", &targetFloor) > 0)
 	{
 		if (targetFloor == currentFloor) //make sure it's not just the same floor
 		{
