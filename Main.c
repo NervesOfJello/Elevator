@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h> //included for exit() calls 
 
 int main()
 {
@@ -23,13 +22,13 @@ int main()
 		else
 		{
 			printf("I'm sorry, that floor doesn't exist.");
-			exit(0);
+			return 0;
 		}
 	}
 	else
 	{
 		printf("ERROR: You did not enter a number.");
-		exit(0);
+		return 0;
 	}
 
     //get target floor from user
@@ -63,13 +62,13 @@ int main()
 		else //OOB target floor
 		{
 			printf("I'm sorry, that floor doesn't exist.");
-			exit(0);
+			return 0;
 		}
 	}
 	else //invalid input
 	{
 		printf("ERROR: You did not enter a number.");
-		exit(0);
+		return 0;
 	}
 
 	return 0;
